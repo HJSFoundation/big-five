@@ -1,0 +1,369 @@
+<!DOCTYPE HTML> <!-- which version of html we are using -->
+<html>
+
+	<head>
+		<meta charset=“utf-8”>
+		<meta name=“description” content=“Big Five Personality Test”>
+		<title>Big Five Personality Test</title>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+
+	<body background="Images/tinnitus.jpg">	
+
+		<div id="background"> <!-- this is the wrap for the whole page -->
+
+			<div id="wrap">
+
+				<header id="header">
+						<h1>Big Five Personality Test</h1>
+				</header>
+
+				<div id="content">
+					<!-- Create a form for the test and add data attributes to each question -->
+					<form id="test-form">
+						<p>1. I am the life of the party</p>
+						<p><input type="radio" id="radio5q1" name="q1" value="5"><label for="radio5q1">strongly agree</label>
+						<input type="radio" id="radio4q1" name="q1" value="4"><label for="radio4q1">agree</label>
+						<input type="radio" id="radio3q1" name="q1" value="3" checked><label for="radio3q1">neither agree nor disagree</label>
+						<input type="radio" id="radio2q1" name="q1" value="2"><label for="radio2q1">disagree</label>
+						<input type="radio" id="radio1q1" name="q1" value="1"><label for="radio1q1">strongly disagree</label></p>
+						<p>2. I feel little concern for others</p>
+						<p><input type="radio" id="radio5q2" name="q2" value="5"><label for="radio5q2">strongly agree</label>
+						<input type="radio" id="radio4q2" name="q2" value="4"><label for="radio4q2">agree</label>
+						<input type="radio" id="radio3q2" name="q2" value="3" checked><label for="radio3q2">neither agree nor disagree</label>
+						<input type="radio" id="radio2q2" name="q2" value="2"><label for="radio2q2">disagree</label>
+						<input type="radio" id="radio1q2" name="q2" value="1"><label for="radio1q2">strongly disagree</label></p>
+						<p>3. I am always prepared</p>
+						<p><input type="radio" id="radio5q3" name="q3" value="5"><label for="radio5q3">strongly agree</label>
+						<input type="radio" id="radio4q3" name="q3" value="4"><label for="radio4q3">agree</label>
+						<input type="radio" id="radio3q3" name="q3" value="3" checked><label for="radio3q3">neither agree nor disagree</label>
+						<input type="radio" id="radio2q3" name="q3" value="2"><label for="radio2q3">disagree</label>
+						<input type="radio" id="radio1q3" name="q3" value="1"><label for="radio1q3">strongly disagree</label></p>
+						<p>4. I get stressed out easily</p>
+						<p><input type="radio" id="radio5q4" name="q4" value="5"><label for="radio5q4">strongly agree</label>
+						<input type="radio" id="radio4q4" name="q4" value="4"><label for="radio4q4">agree</label>
+						<input type="radio" id="radio3q4" name="q4" value="3" checked><label for="radio3q4">neither agree nor disagree</label>
+						<input type="radio" id="radio2q4" name="q4" value="2"><label for="radio2q4">disagree</label>
+						<input type="radio" id="radio1q4" name="q4" value="1"><label for="radio1q4">strongly disagree</label></p>
+						<p>5. I have a rich vocabulary</p>
+						<p><input type="radio" id="radio5q5" name="q5" value="5"><label for="radio5q5">strongly agree</label>
+						<input type="radio" id="radio4q5" name="q5" value="4"><label for="radio4q5">agree</label>
+						<input type="radio" id="radio3q5" name="q5" value="3" checked><label for="radio3q5">neither agree nor disagree</label>
+						<input type="radio" id="radio2q5" name="q5" value="2"><label for="radio2q5">disagree</label>
+						<input type="radio" id="radio1q5" name="q5" value="1"><label for="radio1q5">strongly disagree</label></p>
+						<p>6. I don't talk a lot</p>
+						<p><input type="radio" id="radio5q6" name="q6" value="5"><label for="radio5q6">strongly agree</label>
+						<input type="radio" id="radio4q6" name="q6" value="4"><label for="radio4q6">agree</label>
+						<input type="radio" id="radio3q6" name="q6" value="3" checked><label for="radio3q6">neither agree nor disagree</label>
+						<input type="radio" id="radio2q6" name="q6" value="2"><label for="radio2q6">disagree</label>
+						<input type="radio" id="radio1q6" name="q6" value="1"><label for="radio1q6">strongly disagree</label></p>
+						<p>7. I am interested in people</p>
+						<p><input type="radio" id="radio5q7" name="q7" value="5"><label for="radio5q7">strongly agree</label>
+						<input type="radio" id="radio4q7" name="q7" value="4"><label for="radio4q7">agree</label>
+						<input type="radio" id="radio3q7" name="q7" value="3" checked><label for="radio3q7">neither agree nor disagree</label>
+						<input type="radio" id="radio2q7" name="q7" value="2"><label for="radio2q7">disagree</label>
+						<input type="radio" id="radio1q7" name="q7" value="1"><label for="radio1q7">strongly disagree</label></p>
+						<p>8. I leave my belongings around</p>
+						<p><input type="radio" id="radio5q8" name="q8" value="5"><label for="radio5q8">strongly agree</label>
+						<input type="radio" id="radio4q8" name="q8" value="4"><label for="radio4q8">agree</label>
+						<input type="radio" id="radio3q8" name="q8" value="3" checked><label for="radio3q8">neither agree nor disagree</label>
+						<input type="radio" id="radio2q8" name="q8" value="2"><label for="radio2q8">disagree</label>
+						<input type="radio" id="radio1q8" name="q8" value="1"><label for="radio1q8">strongly disagree</label></p>
+						<p>9. I am relaxed most of the time</p>
+						<p><input type="radio" id="radio5q9" name="q9" value="5"><label for="radio5q9">strongly agree</label>
+						<input type="radio" id="radio4q9" name="q9" value="4"><label for="radio4q9">agree</label>
+						<input type="radio" id="radio3q9" name="q9" value="3" checked><label for="radio3q9">neither agree nor disagree</label>
+						<input type="radio" id="radio2q9" name="q9" value="2"><label for="radio2q9">disagree</label>
+						<input type="radio" id="radio1q9" name="q9" value="1"><label for="radio1q9">strongly disagree</label></p>
+						<p>10. I have difficulty understanding abstract ideas</p>
+						<p><input type="radio" id="radio5q10" name="q10" value="5"><label for="radio5q10">strongly agree</label>
+						<input type="radio" id="radio4q10" name="q10" value="4"><label for="radio4q10">agree</label>
+						<input type="radio" id="radio3q10" name="q10" value="3" checked><label for="radio3q10">neither agree nor disagree</label>
+						<input type="radio" id="radio2q10" name="q10" value="2"><label for="radio2q10">disagree</label>
+						<input type="radio" id="radio1q10" name="q10" value="1"><label for="radio1q10">strongly disagree</label></p>
+						<p>11. I feel comfortable around people</p>
+						<p><input type="radio" id="radio5q11" name="q11" value="5"><label for="radio5q11">strongly agree</label>
+						<input type="radio" id="radio4q11" name="q11" value="4"><label for="radio4q11">agree</label>
+						<input type="radio" id="radio3q11" name="q11" value="3" checked><label for="radio3q11">neither agree nor disagree</label>
+						<input type="radio" id="radio2q11" name="q11" value="2"><label for="radio2q11">disagree</label>
+						<input type="radio" id="radio1q11" name="q11" value="1"><label for="radio1q11">strongly disagree</label></p>
+						<p>12. I insult people</p>
+						<p><input type="radio" id="radio5q12" name="q12" value="5"><label for="radio5q12">strongly agree</label>
+						<input type="radio" id="radio4q12" name="q12" value="4"><label for="radio4q12">agree</label>
+						<input type="radio" id="radio3q12" name="q12" value="3" checked><label for="radio3q12">neither agree nor disagree</label>
+						<input type="radio" id="radio2q12" name="q12" value="2"><label for="radio2q12">disagree</label>
+						<input type="radio" id="radio1q12" name="q12" value="1"><label for="radio1q12">strongly disagree</label></p>
+						<p>13. I pay attention to details</p>
+						<p><input type="radio" id="radio5q13" name="q13" value="5"><label for="radio5q13">strongly agree</label>
+						<input type="radio" id="radio4q13" name="q13" value="4"><label for="radio4q13">agree</label>
+						<input type="radio" id="radio3q13" name="q13" value="3" checked><label for="radio3q13">neither agree nor disagree</label>
+						<input type="radio" id="radio2q13" name="q13" value="2"><label for="radio2q13">disagree</label>
+						<input type="radio" id="radio1q13" name="q13" value="1"><label for="radio1q13">strongly disagree</label></p>
+						<p>14. I worry about things</p>
+						<p><input type="radio" id="radio5q14" name="q14" value="5"><label for="radio5q14">strongly agree</label>
+						<input type="radio" id="radio4q14" name="q14" value="4"><label for="radio4q14">agree</label>
+						<input type="radio" id="radio3q14" name="q14" value="3" checked><label for="radio3q14">neither agree nor disagree</label>
+						<input type="radio" id="radio2q14" name="q14" value="2"><label for="radio2q14">disagree</label>
+						<input type="radio" id="radio1q14" name="q14" value="1"><label for="radio1q14">strongly disagree</label></p>
+						<p>15. I have a vivid imagination</p>
+						<p><input type="radio" id="radio5q15" name="q15" value="5"><label for="radio5q15">strongly agree</label>
+						<input type="radio" id="radio4q15" name="q15" value="4"><label for="radio4q15">agree</label>
+						<input type="radio" id="radio3q15" name="q15" value="3" checked><label for="radio3q15">neither agree nor disagree</label>
+						<input type="radio" id="radio2q15" name="q15" value="2"><label for="radio2q15">disagree</label>
+						<input type="radio" id="radio1q15" name="q15" value="1"><label for="radio1q15">strongly disagree</label></p>
+						<p>16. I keep in the background</p>
+						<p><input type="radio" id="radio5q16" name="q16" value="5"><label for="radio5q16">strongly agree</label>
+						<input type="radio" id="radio4q16" name="q16" value="4"><label for="radio4q16">agree</label>
+						<input type="radio" id="radio3q16" name="q16" value="3" checked><label for="radio3q16">neither agree nor disagree</label>
+						<input type="radio" id="radio2q16" name="q16" value="2"><label for="radio2q16">disagree</label>
+						<input type="radio" id="radio1q16" name="q16" value="1"><label for="radio1q16">strongly disagree</label></p>
+						<p>17. I sympathize with others' feelings</p>
+						<p><input type="radio" id="radio5q17" name="q17" value="5"><label for="radio5q17">strongly agree</label>
+						<input type="radio" id="radio4q17" name="q17" value="4"><label for="radio4q17">agree</label>
+						<input type="radio" id="radio3q17" name="q17" value="3" checked><label for="radio3q17">neither agree nor disagree</label>
+						<input type="radio" id="radio2q17" name="q17" value="2"><label for="radio2q17">disagree</label>
+						<input type="radio" id="radio1q17" name="q17" value="1"><label for="radio1q17">strongly disagree</label></p>
+						<p>18. I make a mess of things</p>
+						<p><input type="radio" id="radio5q18" name="q18" value="5"><label for="radio5q18">strongly agree</label>
+						<input type="radio" id="radio4q18" name="q18" value="4"><label for="radio4q18">agree</label>
+						<input type="radio" id="radio3q18" name="q18" value="3" checked><label for="radio3q18">neither agree nor disagree</label>
+						<input type="radio" id="radio2q18" name="q18" value="2"><label for="radio2q18">disagree</label>
+						<input type="radio" id="radio1q18" name="q18" value="1"><label for="radio1q18">strongly disagree</label></p>
+						<p>19. I seldom feel blue</p>
+						<p><input type="radio" id="radio5q19" name="q19" value="5"><label for="radio5q19">strongly agree</label>
+						<input type="radio" id="radio4q19" name="q19" value="4"><label for="radio4q19">agree</label>
+						<input type="radio" id="radio3q19" name="q19" value="3" checked><label for="radio3q19">neither agree nor disagree</label>
+						<input type="radio" id="radio2q19" name="q19" value="2"><label for="radio2q19">disagree</label>
+						<input type="radio" id="radio1q19" name="q19" value="1"><label for="radio1q19">strongly disagree</label></p>
+						<p>20. I am not interested in abstract ideas</p>
+						<p><input type="radio" id="radio5q20" name="q20" value="5"><label for="radio5q20">strongly agree</label>
+						<input type="radio" id="radio4q20" name="q20" value="4"><label for="radio4q20">agree</label>
+						<input type="radio" id="radio3q20" name="q20" value="3" checked><label for="radio3q20">neither agree nor disagree</label>
+						<input type="radio" id="radio2q20" name="q20" value="2"><label for="radio2q20">disagree</label>
+						<input type="radio" id="radio1q20" name="q20" value="1"><label for="radio1q20">strongly disagree</label></p>
+						<p>21. I start conversations</p>
+						<p><input type="radio" id="radio5q21" name="q21" value="5"><label for="radio5q21">strongly agree</label>
+						<input type="radio" id="radio4q21" name="q21" value="4"><label for="radio4q12">agree</label>
+						<input type="radio" id="radio3q21" name="q21" value="3" checked><label for="radio3q21">neither agree nor disagree</label>
+						<input type="radio" id="radio2q21" name="q21" value="2"><label for="radio2q21">disagree</label>
+						<input type="radio" id="radio1q21" name="q21" value="1"><label for="radio1q12">strongly disagree</label></p>
+						<p>22. I am not interested in other people's problems</p>
+						<p><input type="radio" id="radio5q22" name="q22" value="5"><label for="radio5q22">strongly agree</label>
+						<input type="radio" id="radio4q22" name="q22" value="4"><label for="radio4q22">agree</label>
+						<input type="radio" id="radio3q22" name="q22" value="3" checked><label for="radio3q22">neither agree nor disagree</label>
+						<input type="radio" id="radio2q22" name="q22" value="2"><label for="radio2q22">disagree</label>
+						<input type="radio" id="radio1q22" name="q22" value="1"><label for="radio1q22">strongly disagree</label></p>
+						<p>23. I get chores done right away</p>
+						<p><input type="radio" id="radio5q23" name="q23" value="5"><label for="radio5q23">strongly agree</label>
+						<input type="radio" id="radio4q23" name="q23" value="4"><label for="radio4q23">agree</label>
+						<input type="radio" id="radio3q23" name="q23" value="3" checked><label for="radio3q23">neither agree nor disagree</label>
+						<input type="radio" id="radio2q23" name="q23" value="2"><label for="radio2q23">disagree</label>
+						<input type="radio" id="radio1q23" name="q23" value="1"><label for="radio1q23">strongly disagree</label></p>
+						<p>24. I am easily disturbed</p>
+						<p><input type="radio" id="radio5q24" name="q24" value="5"><label for="radio5q24">strongly agree</label>
+						<input type="radio" id="radio4q24" name="q24" value="4"><label for="radio4q24">agree</label>
+						<input type="radio" id="radio3q24" name="q24" value="3" checked><label for="radio3q24">neither agree nor disagree</label>
+						<input type="radio" id="radio2q24" name="q24" value="2"><label for="radio2q24">disagree</label>
+						<input type="radio" id="radio1q24" name="q24" value="1"><label for="radio1q24">strongly disagree</label></p>
+						<p>25. I have excellent ideas</p>
+						<p><input type="radio" id="radio5q25" name="q25" value="5"><label for="radio5q25">strongly agree</label>
+						<input type="radio" id="radio4q25" name="q25" value="4"><label for="radio4q25">agree</label>
+						<input type="radio" id="radio3q25" name="q25" value="3" checked><label for="radio3q25">neither agree nor disagree</label>
+						<input type="radio" id="radio2q25"name="q25" value="2"><label for="radio2q25">disagree</label>
+						<input type="radio" id="radio1q25" name="q25" value="1"><label for="radio1q25">strongly disagree</label></p>
+						<p>26. I have little to say</p>
+						<p><input type="radio" id="radio5q26" name="q26" value="5"><label for="radio5q26">strongly agree</label>
+						<input type="radio" id="radio4q26" name="q26" value="4"><label for="radio4q26">agree</label>
+						<input type="radio" id="radio3q26" name="q26" value="3" checked><label for="radio3q26">neither agree nor disagree</label>
+						<input type="radio" id="radio2q26" name="q26" value="2"><label for="radio2q26">disagree</label>
+						<input type="radio" id="radio1q26" name="q26" value="1"><label for="radio1q26">strongly disagree</label></p>
+						<p>27. I have a soft heart</p>
+						<p><input type="radio" id="radio5q27" name="q27" value="5"><label for="radio5q27">strongly agree</label>
+						<input type="radio" id="radio4q27" name="q27" value="4"><label for="radio4q27">agree</label>
+						<input type="radio" id="radio3q27" name="q27" value="3" checked><label for="radio3q27">neither agree nor disagree</label>
+						<input type="radio" id="radio2q27" name="q27" value="2"><label for="radio2q27">disagree</label>
+						<input type="radio" id="radio1q27" name="q27" value="1"><label for="radio1q27">strongly disagree</label></p>
+						<p>28. I often forget to put things back in their proper place</p>
+						<p><input type="radio" id="radio5q28" name="q28" value="5"><label for="radio5q28">strongly agree</label>
+						<input type="radio" id="radio4q28" name="q28" value="4"><label for="radio4q28">agree</label>
+						<input type="radio" id="radio3q28" name="q28" value="3" checked><label for="radio3q28">neither agree nor disagree</label>
+						<input type="radio" id="radio2q28" name="q28" value="2"><label for="radio2q28">disagree</label>
+						<input type="radio" id="radio1q28" name="q28" value="1"><label for="radio1q28">strongly disagree</label></p>
+						<p>29. I get upset easily</p>
+						<p><input type="radio" id="radio5q29" name="q29" value="5"><label for="radio5q29">strongly agree</label>
+						<input type="radio" id="radio4q29" name="q29" value="4"><label for="radio4q29">agree</label>
+						<input type="radio" id="radio3q29" name="q29" value="3" checked><label for="radio3q29">neither agree nor disagree</label>
+						<input type="radio" id="radio2q29" name="q29" value="2"><label for="radio2q29">disagree</label>
+						<input type="radio" id="radio1q29" name="q29" value="1"><label for="radio1q29">strongly disagree</label></p>
+						<p>30. I do not have a good imagination</p>
+						<p><input type="radio" id="radio5q30" name="q30" value="5"><label for="radio5q30">strongly agree</label>
+						<input type="radio" id="radio4q30" name="q30" value="4"><label for="radio4q30">agree</label>
+						<input type="radio" id="radio3q30" name="q30" value="3" checked><label for="radio3q30">neither agree nor disagree</label>
+						<input type="radio" id="radio2q30" name="q30" value="2"><label for="radio2q30">disagree</label>
+						<input type="radio" id="radio1q30" name="q30" value="1"><label for="radio1q30">strongly disagree</label></p>
+						<p>31. I talk to a lot of different people at parties</p>
+						<p><input type="radio" id="radio5q31" name="q31" value="5"><label for="radio5q31">strongly agree</label>
+						<input type="radio" id="radio4q31" name="q31" value="4"><label for="radio4q31">agree</label>
+						<input type="radio" id="radio3q31" name="q31" value="3" checked><label for="radio3q31">neither agree nor disagree</label>
+						<input type="radio" id="radio2q31" name="q31" value="2"><label for="radio2q31">disagree</label>
+						<input type="radio" id="radio1q31" name="q31" value="1"><label for="radio1q31">strongly disagree</label></p>
+						<p>32. I am not really interested in others</p>
+						<p><input type="radio" id="radio5q32" name="q32" value="5"><label for="radio5q32">strongly agree</label>
+						<input type="radio" id="radio4q32" name="q32" value="4"><label for="radio4q32">agree</label>
+						<input type="radio" id="radio3q32" name="q32" value="3" checked><label for="radio3q32">neither agree nor disagree</label>
+						<input type="radio" id="radio2q32" name="q32" value="2"><label for="radio2q32">disagree</label>
+						<input type="radio" id="radio1q32" name="q32" value="1"><label for="radio1q32">trongly disagree</label></p>
+						<p>33. I like order</p>
+						<p><input type="radio" id="radio5q33" name="q33" value="5"><label for="radio5q33">strongly agree</label>
+						<input type="radio" id="radio4q33" name="q33" value="4"><label for="radio4q33">agree</label>
+						<input type="radio" id="radio3q33" name="q33" value="3" checked><label for="radio3q33">neither agree nor disagree</label>
+						<input type="radio" id="radio2q33" name="q33" value="2"><label for="radio2q33">disagree</label>
+						<input type="radio" id="radio1q33" name="q33" value="1"><label for="radio1q33">strongly disagree</label></p>
+						<p>34. I change my mood a lot</p>
+						<p><input type="radio" id="radio5q34" name="q34" value="5"><label for="radio5q34">strongly agree</label>
+						<input type="radio" id="radio4q34" name="q34" value="4"><label for="radio4q34">agree</label>
+						<input type="radio" id="radio3q34" name="q34" value="3" checked><label for="radio3q34">neither agree nor disagree</label>
+						<input type="radio" id="radio2q34" name="q34" value="2"><label for="radio2q34">disagree</label>
+						<input type="radio" id="radio1q34" name="q34" value="1"><label for="radio1q34">strongly disagree</label></p>
+						<p>35. I am quick to understand things</p>
+						<p><input type="radio" id="radio5q35" name="q35" value="5"><label for="radio5q35">strongly agree</label>
+						<input type="radio" id="radio4q35" name="q35" value="4"><label for="radio4q35">agree</label>
+						<input type="radio" id="radio3q35" name="q35" value="3" checked><label for="radio3q35">neither agree nor disagree</label>
+						<input type="radio" id="radio2q35" name="q35" value="2"><label for="radio2q35">disagree</label>
+						<input type="radio" id="radio1q35" name="q35" value="1"><label for="radio1q35">strongly disagree</label></p>
+						<p>36. I don't like to draw attention to myself</p>
+						<p><input type="radio" id="radio5q36" name="q36" value="5"><label for="radio5q36">strongly agree</label>
+						<input type="radio" id="radio4q36" name="q36" value="4"><label for="radio4q36">agree</label>
+						<input type="radio" id="radio3q36" name="q36" value="3" checked><label for="radio3q36">neither agree nor disagree</label>
+						<input type="radio" id="radio2q36" name="q36" value="2"><label for="radio2q36">disagree</label>
+						<input type="radio" id="radio1q36" name="q36" value="1"><label for="radio1q36">strongly disagree</label></p>
+						<p>37. I take time out for others</p>
+						<p><input type="radio" id="radio5q37" name="q37" value="5"><label for="radio5q37">strongly agree</label>
+						<input type="radio" id="radio4q37" name="q37" value="4"><label for="radio4q37">agree</label>
+						<input type="radio" id="radio3q37" name="q37" value="3" checked><label for="radio3q37">neither agree nor disagree</label>
+						<input type="radio" id="radio2q37" name="q37" value="2"><label for="radio2q37">disagree</label>
+						<input type="radio" id="radio1q37" name="q37" value="1"><label for="radio1q37">strongly disagree</label></p>
+						<p>38. I shirk my duties</p>
+						<p><input type="radio" id="radio5q38" name="q38" value="5"><label for="radio5q38">strongly agree</label>
+						<input type="radio" id="radio4q38" name="q38" value="4"><label for="radio4q38">agree</label>
+						<input type="radio" id="radio3q38" name="q38" value="3" checked><label for="radio3q38">neither agree nor disagree</label>
+						<input type="radio" id="radio2q38" name="q38" value="2"><label for="radio2q38">disagree</label>
+						<input type="radio" id="radio1q38" name="q38" value="1"><label for="radio1q38">strongly disagree</label></p>
+						<p>39. I have frequent mood swings</p>
+						<p><input type="radio" id="radio5q39" name="q39" value="5"><label for="radio5q39">strongly agree</label>
+						<input type="radio" id="radio4q39" name="q39" value="4"><label for="radio4q39">agree</label>
+						<input type="radio" id="radio3q39" name="q39" value="3" checked><label for="radio3q39">neither agree nor disagree</label>
+						<input type="radio" id="radio2q39" name="q39" value="2"><label for="radio2q39">disagree</label>
+						<input type="radio" id="radio1q39" name="q39" value="1"><label for="radio1q39">strongly disagree</label></p>
+						<p>40. I use difficult words</p>
+						<p><input type="radio" id="radio5q40" name="q40" value="5"><label for="radio5q40">strongly agree</label>
+						<input type="radio" id="radio4q40" name="q40" value="4"><label for="radio4q40">agree</label>
+						<input type="radio" id="radio3q40" name="q40" value="3" checked><label for="radio3q40">neither agree nor disagree</label>
+						<input type="radio" id="radio2q40" name="q40" value="2"><label for="radio2q40">disagree</label>
+						<input type="radio" id="radio1q40" name="q40" value="1"><label for="radio1q40">strongly disagree</label></p>
+						<p>41. I don't mind being the center of attention</p>
+						<p><input type="radio" id="radio5q41" name="q41" value="5"><label for="radio5q41">strongly agree</label>
+						<input type="radio" id="radio4q41" name="q41" value="4"><label for="radio4q41">agree</label>
+						<input type="radio" id="radio3q41" name="q41" value="3" checked><label for="radio3q41">neither agree nor disagree</label>
+						<input type="radio" id="radio2q41" name="q41" value="2"><label for="radio2q41">disagree</label>
+						<input type="radio" id="radio1q41" name="q41" value="1"><label for="radio1q41">strongly disagree</label></p>
+						<p>42. I feel others' emotions</p>
+						<p><input type="radio" id="radio5q42" name="q42" value="5"><label for="radio5q42">strongly agree</label>
+						<input type="radio" id="radio4q42" name="q42" value="4"><label for="radio4q42">agree</label>
+						<input type="radio" id="radio3q42" name="q42" value="3" checked><label for="radio3q42">neither agree nor disagree</label>
+						<input type="radio" id="radio2q42" name="q42" value="2"><label for="radio2q42">disagree</label>
+						<input type="radio" id="radio1q42" name="q42" value="1"><label for="radio1q42">strongly disagree</label></p>
+						<p>43. I follow a schedule</p>
+						<p><input type="radio" id="radio5q43" name="q43" value="5"><label for="radio5q43">strongly agree</label>
+						<input type="radio" id="radio4q43" name="q43" value="4"><label for="radio4q43">agree</label>
+						<input type="radio" id="radio3q43" name="q43" value="3" checked><label for="radio3q43">neither agree nor disagree</label>
+						<input type="radio" id="radio2q43" name="q43" value="2"><label for="radio2q43">disagree</label>
+						<input type="radio" id="radio1q43" name="q43" value="1"><label for="radio1q43">strongly disagree</label></p>
+						<p>44. I get irritated easily</p>
+						<p><input type="radio" id="radio5q44" name="q44" value="5"><label for="radio5q44">strongly agree</label>
+						<input type="radio" id="radio4q44" name="q44" value="4"><label for="radio4q44">agree</label>
+						<input type="radio" id="radio3q44" name="q44" value="3" checked><label for="radio3q44">neither agree nor disagree</label>
+						<input type="radio" id="radio2q44" name="q44" value="2"><label for="radio2q44">disagree</label>
+						<input type="radio" id="radio1q44" name="q44" value="1"><label for="radio1q44">strongly disagree</label></p>
+						<p>45. I spend time reflecting on things</p>
+						<p><input type="radio" id="radio5q45" name="q45" value="5"><label for="radio5q45">strongly agree</label>
+						<input type="radio" id="radio4q45" name="q45" value="4"><label for="radio4q45">agree</label>
+						<input type="radio" id="radio3q45" name="q45" value="3" checked><label for="radio3q45">neither agree nor disagree</label>
+						<input type="radio" id="radio2q45" name="q45" value="2"><label for="radio2q45">disagree</label>
+						<input type="radio" id="radio1q45" name="q45" value="1"><label for="radio1q45">strongly disagree</label></p>
+						<p>46. I am quiet around strangers</p>
+						<p><input type="radio" id="radio5q46" name="q46" value="5"><label for="radio5q46">strongly agree</label>
+						<input type="radio" id="radio4q46" name="q46" value="4"><label for="radio4q46">agree</label>
+						<input type="radio" id="radio3q46" name="q46" value="3" checked><label for="radio3q46">neither agree nor disagree</label>
+						<input type="radio" id="radio2q46" name="q46" value="2"><label for="radio2q46">disagree</label>
+						<input type="radio" id="radio1q46" name="q46" value="1"><label for="radio1q46">strongly disagree</label></p>
+						<p>47. I make people feel at ease</p>
+						<p><input type="radio" id="radio5q47" name="q47" value="5"><label for="radio5q47">strongly agree</label>
+						<input type="radio" id="radio4q47" name="q47" value="4"><label for="radio4q47">agree</label>
+						<input type="radio" id="radio3q47" name="q47" value="3" checked><label for="radio3q47">neither agree nor disagree</label>
+						<input type="radio" id="radio2q47" name="q47" value="2"><label for="radio2q47">disagree</label>
+						<input type="radio" id="radio1q47" name="q47" value="1"><label for="radio1q47">strongly disagree</label></p>
+						<p>48. I am exacting in my work</p>
+						<p><input type="radio" id="radio5q48" name="q48" value="5"><label for="radio5q48">strongly agree</label>
+						<input type="radio" id="radio4q48" name="q48" value="4"><label for="radio4q48">agree</label>
+						<input type="radio" id="radio3q48" name="q48" value="3" checked><label for="radio3q48">neither agree nor disagree</label>
+						<input type="radio" id="radio2q48" name="q48" value="2"><label for="radio2q48">disagree</label>
+						<input type="radio" id="radio1q48" name="q48" value="1"><label for="radio1q48">strongly disagree</label></p>
+						<p>49. I often feel blue</p>
+						<p><input type="radio" id="radio5q49" name="q49" value="5"><label for="radio5q49">strongly agree</label>
+						<input type="radio" id="radio4q49" name="q49" value="4"><label for="radio4q49">agree</label>
+						<input type="radio" id="radio3q49" name="q49" value="3" checked><label for="radio3q49">neither agree nor disagree</label>
+						<input type="radio" id="radio2q49" name="q49" value="2"><label for="radio2q49">disagree</label>
+						<input type="radio" id="radio1q49" name="q49" value="1"><label for="radio1q49">strongly disagree</label></p>
+						<p>50. I am full of ideas</p>
+						<p><input type="radio" id="radio5q50" name="q50" value="5"><label for="radio5q50">strongly agree</label>
+						<input type="radio" id="radio4q50" name="q50" value="4"><label for="radio4q50">agree</label>
+						<input type="radio" id="radio3q50" name="q50" value="3" checked><label for="radio3q50">neither agree nor disagree</label>
+						<input type="radio" id="radio2q50" name="q50" value="2"><label for="radio2q50">disagree</label>
+						<input type="radio" id="radio1q50" name="q50" value="1"><label for="radio1q50">strongly disagree</label></p>
+						<input type="submit" name="submit" value="Calculate Your Score">
+					</form>
+
+					<!-- Create a graph for the test results -->
+					<div id="graph">
+						<h1 id="graph-title">Score</h1>
+						<div id="bar-o">
+							<h1>Openness</h1>
+						</div> 
+						<div id="bar-c">
+							<h1>Conscientiousness</h1>
+						</div><!-- 
+						--><div id="bar-e">
+							<h1>Extraversion</h1>
+						</div><!-- 
+						--><div id="bar-a">
+							<h1>Agreeableness</h1>
+						</div><!-- 
+						--><div id="bar-n">
+							<h1>Neuroticism</h1>
+						</div>
+					</div>
+
+				</div>
+
+				<footer id="footer">
+					<p>Learn more about each trait</p>
+					<!-- Create a navigation bar for the content pages -->
+					<nav id="nav">
+						<a href="myquiza.htm">Openness</a>
+						<a href="myquizb.htm">Conscientiousness</a>
+						<a href="myquizc.htm">Extraversion</a>
+						<a href="myquizd.htm">Agreeableness</a>
+						<a href="myquize.htm">Neuroticism</a>
+					</nav>
+				</footer>
+
+			</div>
+
+		</div>
+
+		<script src="js/main.js" type="text/javascript"></script>
+
+	</body>
+
+<html>

@@ -1,0 +1,135 @@
+/*Format the background images*/
+.fill {
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-position:fill;
+}
+#background {
+	width:100%;
+	margin:auto;
+}
+/*Format the header*/
+#header {
+	font-size:30px;
+	font-family: sans-serif;
+	width:100%;
+	color:white;
+	margin:auto;
+	position:static;
+	padding:20px;
+	text-align:center;
+}
+/*Format the body*/
+#content {
+	font-size:20px;
+	font-family: sans-serif;
+	position:static;
+	width:100%;
+	top:200px;
+	margin:auto;
+	color:white;
+	padding:20px;
+	text-align:center;
+}
+/*Format the test form*/
+#test {
+	font-size:20px;
+	font-family: sans-serif;
+	position:static;
+	width:100%;
+	top:200px;
+	margin:auto;
+	color:white;
+	padding:20px;
+	text-align:center;
+}
+/*Format the score graph*/
+#graph {
+	width: 300px;
+	margin: 20px auto 0 auto;
+	background-color: gainsboro;
+}
+#graph-title {
+	font-size: 2em;
+	text-align: center;
+	color: black;
+	padding: 10px;
+	background-color:slategray;
+	text-transform: uppercase;
+}
+#graph div {
+	width: 100%;
+	height: 100%;
+	margin: 10px;
+	padding: 10px;
+	background-color:gainsboro;
+	display:table-row;
+}
+#graph div h1 {
+	width: 100%;
+	height: 20%;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: right;
+	color: black;
+	padding: 10px;
+}
+/*Format the footer*/
+#footer {
+	float:left;
+	font-size:20px;
+	font-family: sans-serif;
+	position:static;
+	width:100%;
+	top:100px;
+	bottom:200px;
+	margin:auto;
+	color:white;
+	padding:20px;
+	text-align:center;
+}
+/*Format the navigation bar*/
+#nav {
+	margin: 0 ;
+	padding: 0 ;
+	list-style: none ;
+	display: inline ;
+}
+#nav a {
+	color:black;
+	background-color:gainsboro;
+	padding: 8px ;
+	text-decoration: none ;
+	display: inline ;
+}
+#nav a:hover {
+	color:white;
+	background-color:black;
+}
+/*Format the radio buttons*/
+input[type=radio] {
+	display:none;
+    margin:10px;
+}
+input[type=radio] + label {
+    display:inline-block;
+    margin:5px;
+    padding: 4px 12px;
+    background-color:gainsboro;
+    color:black;
+    border-color: #ddd;
+}
+input[type=radio]:checked + label { 
+   background-image: none;
+    background-color:slategray;
+    color:black;
+}
+/*Format the submit button*/
+input[type=submit] {
+	color:white;
+	background-color:black;
+	padding: 8px ;
+	font-size:20px;
+	border:none;
+	outline:none;
+}
