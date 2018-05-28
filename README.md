@@ -1,4 +1,3 @@
-# Big-Five-Personality-Test
-Capstone project for CodeAbode
+# Big Five Personality INVENTORY
 
 ![alt text](Screenshot/ocean.png)
